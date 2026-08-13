@@ -1,0 +1,168 @@
+/* =========================================================
+   HOME — MANAGED IT
+   Homepage ongoing IT support section and
+   section-specific responsive styles
+   ========================================================= */
+
+
+/* =========================================================
+   ONGOING IT
+   ========================================================= */
+
+.managed-home-section {
+    position: relative;
+    overflow: hidden;
+    padding: 108px 0;
+    background: var(--ink-soft);
+    color: #ffffff;
+}
+
+.managed-background-text {
+    position: absolute;
+    left: 50%;
+    bottom: -74px;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.025);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(9rem, 18vw, 17rem);
+    font-style: italic;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.managed-home-layout {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.1fr 0.8fr;
+    gap: 80px;
+    align-items: center;
+}
+
+
+/* =========================================================
+   MANAGED IT COPY
+   ========================================================= */
+
+.managed-home-copy h2 {
+    max-width: 760px;
+    margin-bottom: 24px;
+    color: #ffffff;
+    font-size: clamp(3rem, 5vw, 4.9rem);
+    line-height: 1;
+    letter-spacing: -0.052em;
+}
+
+.managed-home-copy h2 em {
+    color: #b9cbd6;
+}
+
+.managed-home-copy > p:not(.section-kicker) {
+    max-width: 620px;
+    margin-bottom: 30px;
+    color: #cbd7de;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   MANAGED IT PANEL
+   ========================================================= */
+
+.managed-home-panel {
+    padding: 30px;
+    border: 1px solid var(--line-dark);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.055);
+    backdrop-filter: blur(12px);
+}
+
+.managed-panel-label {
+    display: block;
+    margin-bottom: 20px;
+    color: #afc1cc;
+    font-size: 0.66rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+}
+
+.managed-home-panel ul {
+    list-style: none;
+}
+
+.managed-home-panel li {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 14px;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #eef3f6;
+    font-size: 0.9rem;
+    font-weight: 650;
+}
+
+.managed-home-panel li:first-child {
+    border-top: 0;
+}
+
+.managed-home-panel li span {
+    color: #9db2bf;
+    font-size: 0.68rem;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   RESPONSIVE — MANAGED IT
+   ========================================================= */
+
+@media (max-width: 1080px) {
+
+    .managed-home-layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+}
+
+
+@media (max-width: 760px) {
+
+    .managed-home-section {
+        padding: 76px 0;
+    }
+
+    .managed-home-layout {
+        gap: 34px;
+    }
+
+    .managed-home-copy h2 {
+        font-size: clamp(2.5rem, 10vw, 3.5rem);
+        line-height: 1.02;
+    }
+
+    .managed-home-panel {
+        padding: 22px;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .managed-home-section {
+        padding: 64px 0;
+    }
+
+    .managed-home-copy h2 {
+        font-size: 2.5rem;
+    }
+
+    .managed-home-panel li {
+        grid-template-columns: 28px 1fr;
+        font-size: 0.82rem;
+    }
+
+}
