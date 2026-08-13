@@ -1,0 +1,27 @@
+/* =========================================================
+   BALLARD IT SERVICES — V2
+   MASTER STYLESHEET
+   ========================================================= */
+
+
+/* =========================================================
+   FOUNDATION
+   ========================================================= */
+
+@import url("./variables.css");
+@import url("./base.css");
+@import url("./layout.css");
+@import url("./components.css");
+
+
+/* =========================================================
+   PAGE STYLES
+   ========================================================= */
+
+@import url("./home.css");
+@import url("./services.css");
+@import url("./managed-it.css");
+@import url("./microsoft-365.css");
+@import url("./about.css");
+@import url("./service-area.css");
+@import url("./contact.css");

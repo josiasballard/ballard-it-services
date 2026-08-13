@@ -1,0 +1,41 @@
+/* =========================================================
+   DESIGN TOKENS / VARIABLES
+   ========================================================= */
+
+:root {
+    --ink: #172033;
+    --ink-soft: #27374d;
+    --slate: #526d82;
+    --steel: #9db2bf;
+    --mist: #dde6ed;
+
+    --paper: #ffffff;
+    --paper-warm: #f7f8f6;
+    --paper-cool: #f3f6f8;
+
+    --line: #d8e0e6;
+    --line-dark: rgba(255, 255, 255, 0.14);
+
+    --text-muted: #677584;
+    --text-light: #dbe4ea;
+
+    /* Shared aliases for internal pages */
+    --blue-dark: var(--ink-soft);
+    --blue-mid: var(--slate);
+    --blue-light: var(--steel);
+    --blue-pale: var(--mist);
+
+    --border: var(--line);
+    --text: var(--ink);
+    --text-soft: #5f6d79;
+
+    /* Shadows */
+    --shadow-soft: 0 18px 50px rgba(23, 32, 51, 0.08);
+    --shadow-card: 0 12px 30px rgba(23, 32, 51, 0.06);
+
+    /* Border radii */
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 34px;
+}

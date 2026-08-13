@@ -1,0 +1,564 @@
+/* =========================================================
+   MICROSOFT 365 PAGE
+   ========================================================= */
+
+.m365-page-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 7rem 0 6rem;
+    background:
+        radial-gradient(
+            circle at 78% 40%,
+            rgba(157, 178, 191, 0.26),
+            transparent 32%
+        ),
+        linear-gradient(135deg, #ffffff, #f5f8fa);
+}
+
+.m365-page-hero-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(400px, 0.85fr);
+    gap: 5rem;
+    align-items: center;
+}
+
+.m365-page-copy h1 {
+    max-width: 800px;
+    margin: 1.4rem 0 1.6rem;
+    font-size: clamp(3.6rem, 5.8vw, 5.8rem);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+}
+
+.m365-page-copy h1 em {
+    display: block;
+    color: var(--blue-mid);
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.m365-page-copy > p:not(.section-kicker) {
+    max-width: 680px;
+    color: var(--text-muted);
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   HERO GRAPHIC
+   ========================================================= */
+
+.m365-hero-visual {
+    position: relative;
+    min-height: 520px;
+}
+
+.m365-orbit-ring {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 1px solid rgba(82, 109, 130, 0.18);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.orbit-one {
+    width: 390px;
+    height: 390px;
+}
+
+.orbit-two {
+    width: 275px;
+    height: 275px;
+}
+
+.m365-center-card {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    width: 235px;
+    padding: 1.8rem;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 25px 65px rgba(39, 55, 77, 0.12);
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(14px);
+}
+
+.m365-center-label {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: var(--blue-mid);
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+}
+
+.m365-center-card strong {
+    display: block;
+    margin-bottom: 0.7rem;
+    font-size: 1.35rem;
+    line-height: 1.2;
+}
+
+.m365-center-card p {
+    color: var(--text-muted);
+    font-size: 0.83rem;
+    line-height: 1.6;
+}
+
+.m365-app-card {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 16px 35px rgba(39, 55, 77, 0.08);
+}
+
+.m365-app-card > span {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    color: #ffffff;
+    background: var(--blue-dark);
+    font-size: 0.82rem;
+    font-weight: 800;
+}
+
+.m365-app-card strong {
+    font-size: 0.8rem;
+}
+
+.app-outlook {
+    left: 2%;
+    top: 20%;
+}
+
+.app-teams {
+    right: 2%;
+    top: 22%;
+}
+
+.app-onedrive {
+    left: 7%;
+    bottom: 16%;
+}
+
+.app-users {
+    right: 8%;
+    bottom: 15%;
+}
+
+
+/* =========================================================
+   SERVICE CARDS
+   ========================================================= */
+
+.m365-service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.m365-service-card {
+    min-height: 290px;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    background: #ffffff;
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.m365-service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 45px rgba(39, 55, 77, 0.08);
+}
+
+.m365-service-card > span {
+    color: var(--blue-mid);
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+.m365-service-card h3 {
+    margin: 2.4rem 0 0.8rem;
+    font-size: 1.35rem;
+}
+
+.m365-service-card p {
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   EMPLOYEE LIFECYCLE
+   ========================================================= */
+
+.m365-lifecycle-section {
+    padding: 7rem 0;
+    color: #ffffff;
+    background:
+        linear-gradient(145deg, #27374d, #35485f);
+}
+
+.m365-lifecycle-layout {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.75fr) minmax(0, 1.25fr);
+    gap: 6rem;
+    align-items: start;
+}
+
+.m365-lifecycle-copy {
+    position: sticky;
+    top: 8rem;
+}
+
+.m365-lifecycle-copy h2 {
+    margin: 1.3rem 0 1.4rem;
+    color: #ffffff;
+    font-size: clamp(3rem, 4.8vw, 4.7rem);
+    line-height: 1;
+    letter-spacing: -0.05em;
+}
+
+.m365-lifecycle-copy h2 em {
+    display: block;
+    color: var(--blue-light);
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.m365-lifecycle-copy > p:not(.section-kicker) {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.75;
+}
+
+.m365-lifecycle-steps {
+    display: grid;
+}
+
+.m365-lifecycle-step {
+    display: grid;
+    grid-template-columns: 46px 1fr;
+    gap: 1.2rem;
+    padding: 1.8rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.m365-lifecycle-step:first-child {
+    border-top: 0;
+}
+
+.m365-lifecycle-step > span {
+    color: var(--blue-light);
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+.m365-lifecycle-step strong {
+    display: block;
+    margin-bottom: 0.45rem;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.m365-lifecycle-step p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ADMINISTRATION
+   ========================================================= */
+
+.m365-admin-section {
+    background: var(--paper-warm);
+}
+
+.m365-admin-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1fr);
+    gap: 6rem;
+}
+
+.m365-admin-layout h2 {
+    max-width: 720px;
+    margin-top: 1.2rem;
+    font-size: clamp(2.8rem, 4.5vw, 4.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.05em;
+}
+
+.m365-admin-list {
+    display: grid;
+}
+
+.m365-admin-list > div {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 1rem;
+    align-items: start;
+    padding: 1.35rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.m365-admin-list > div:first-child {
+    border-top: 0;
+}
+
+.m365-admin-list span {
+    color: var(--blue-mid);
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+.m365-admin-list p {
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   SUPPORT OPTIONS
+   ========================================================= */
+
+.m365-support-options-section {
+    padding: 7rem 0;
+    color: #ffffff;
+    background: var(--blue-dark);
+}
+
+.m365-support-options-heading {
+    max-width: 850px;
+    margin-bottom: 3.5rem;
+}
+
+.m365-support-options-heading h2 {
+    margin-top: 1.3rem;
+    color: #ffffff;
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 1;
+    letter-spacing: -0.05em;
+}
+
+.m365-support-options-heading h2 em {
+    color: var(--blue-light);
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.m365-support-option-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.m365-support-option-grid article {
+    padding: 2.4rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.045);
+}
+
+.m365-support-option-grid article > span {
+    color: var(--blue-light);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+}
+
+.m365-support-option-grid h3 {
+    margin: 2rem 0 0.9rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.m365-support-option-grid p {
+    margin-bottom: 1.6rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+}
+
+.m365-outline-button {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.35);
+    background: transparent;
+}
+
+.m365-outline-button:hover {
+    border-color: #ffffff;
+}
+
+
+/* =========================================================
+   SCOPE
+   ========================================================= */
+
+.m365-scope-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.8fr);
+    gap: 6rem;
+}
+
+.m365-scope-layout h2 {
+    max-width: 720px;
+    margin-top: 1.2rem;
+    font-size: clamp(2.8rem, 4.5vw, 4.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.05em;
+}
+
+.m365-scope-copy {
+    padding-top: 2rem;
+}
+
+.m365-scope-copy p {
+    margin-bottom: 1.4rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .m365-page-hero-layout,
+    .m365-lifecycle-layout,
+    .m365-admin-layout,
+    .m365-scope-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .m365-lifecycle-copy {
+        position: static;
+    }
+
+    .m365-service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .m365-hero-visual {
+        width: min(100%, 650px);
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .m365-page-hero {
+        padding: 4.5rem 0 4rem;
+    }
+
+    .m365-page-copy h1 {
+        font-size: clamp(2.9rem, 12vw, 4.2rem);
+    }
+
+    .m365-hero-visual {
+        min-height: 420px;
+    }
+
+    .orbit-one {
+        width: 310px;
+        height: 310px;
+    }
+
+    .orbit-two {
+        width: 220px;
+        height: 220px;
+    }
+
+    .m365-center-card {
+        width: 210px;
+        padding: 1.4rem;
+    }
+
+    .m365-app-card {
+        padding: 0.65rem 0.75rem;
+    }
+
+    .m365-service-grid,
+    .m365-support-option-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .m365-lifecycle-section,
+    .m365-support-options-section {
+        padding: 4.5rem 0;
+    }
+
+    .m365-lifecycle-copy h2,
+    .m365-admin-layout h2,
+    .m365-support-options-heading h2,
+    .m365-scope-layout h2 {
+        font-size: clamp(2.5rem, 11vw, 3.5rem);
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .m365-hero-visual {
+        min-height: 390px;
+    }
+
+    .orbit-one {
+        width: 275px;
+        height: 275px;
+    }
+
+    .orbit-two {
+        width: 190px;
+        height: 190px;
+    }
+
+    .m365-app-card strong {
+        display: none;
+    }
+
+    .m365-app-card {
+        padding: 0.5rem;
+    }
+
+    .app-outlook {
+        left: 0;
+    }
+
+    .app-teams {
+        right: 0;
+    }
+
+    .app-onedrive {
+        left: 4%;
+    }
+
+    .app-users {
+        right: 4%;
+    }
+
+    .m365-service-card,
+    .m365-support-option-grid article {
+        padding: 1.6rem;
+        border-radius: 18px;
+    }
+
+}

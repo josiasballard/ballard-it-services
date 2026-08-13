@@ -1,0 +1,502 @@
+/* =========================================================
+   MANAGED IT PAGE
+   ========================================================= */
+
+.managed-page-hero {
+    padding: 7rem 0 6rem;
+    color: #ffffff;
+    background:
+        radial-gradient(
+            circle at 80% 25%,
+            rgba(157, 178, 191, 0.15),
+            transparent 32%
+        ),
+        var(--blue-dark);
+}
+
+.managed-page-hero-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.65fr);
+    gap: 6rem;
+    align-items: center;
+}
+
+.managed-page-copy h1 {
+    max-width: 850px;
+    margin: 1.4rem 0 1.6rem;
+    color: #ffffff;
+    font-size: clamp(3.4rem, 5.6vw, 5.8rem);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+}
+
+.managed-page-copy h1 em {
+    display: block;
+    color: var(--blue-light);
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.managed-page-copy > p:not(.section-kicker) {
+    max-width: 700px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
+.managed-hero-outline {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.35);
+    background: transparent;
+}
+
+.managed-hero-outline:hover {
+    border-color: #ffffff;
+}
+
+.managed-page-panel {
+    padding: 2.4rem;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.055);
+    backdrop-filter: blur(12px);
+}
+
+.managed-business-stat {
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+    margin: 1.8rem 0 1.2rem;
+}
+
+.managed-business-stat strong {
+    color: #ffffff;
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: -0.06em;
+}
+
+.managed-business-stat span {
+    color: var(--blue-light);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.managed-page-panel > p {
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.7;
+}
+
+.managed-panel-divider {
+    height: 1px;
+    margin: 1.6rem 0;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.managed-panel-mini {
+    display: grid;
+    gap: 0.65rem;
+}
+
+.managed-panel-mini span {
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 0.82rem;
+    font-weight: 650;
+}
+
+
+/* =========================================================
+   VALUE SECTION
+   ========================================================= */
+
+.managed-value-section {
+    background: #ffffff;
+}
+
+.managed-value-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.managed-value-card {
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    background: #ffffff;
+}
+
+.managed-value-card > span {
+    color: var(--blue-mid);
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+.managed-value-card h3 {
+    margin: 2.2rem 0 0.8rem;
+    font-size: 1.4rem;
+}
+
+.managed-value-card p {
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   INCLUDED SUPPORT
+   ========================================================= */
+
+.managed-included-section {
+    padding: 7rem 0;
+    color: #ffffff;
+    background:
+        linear-gradient(
+            145deg,
+            #27374d 0%,
+            #32465d 100%
+        );
+}
+
+.managed-included-layout {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.7fr) minmax(0, 1.3fr);
+    gap: 6rem;
+    align-items: start;
+}
+
+.managed-included-copy {
+    position: sticky;
+    top: 8rem;
+}
+
+.managed-included-copy h2 {
+    margin: 1.3rem 0 1.5rem;
+    color: #ffffff;
+    font-size: clamp(2.8rem, 4.5vw, 4.6rem);
+    line-height: 1.02;
+    letter-spacing: -0.05em;
+}
+
+.managed-included-copy h2 em {
+    display: block;
+    color: var(--blue-light);
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.managed-included-copy > p:not(.section-kicker) {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.75;
+}
+
+.managed-included-list {
+    display: grid;
+}
+
+.managed-included-item {
+    display: grid;
+    grid-template-columns: 46px 1fr;
+    gap: 1.2rem;
+    padding: 1.7rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.managed-included-item:first-child {
+    border-top: 0;
+}
+
+.managed-included-item > span {
+    color: var(--blue-light);
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+.managed-included-item strong {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #ffffff;
+    font-size: 1.05rem;
+}
+
+.managed-included-item p {
+    max-width: 680px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   GOOD FIT
+   ========================================================= */
+
+.managed-fit-section {
+    background: var(--paper-warm);
+}
+
+.managed-fit-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(300px, 1fr);
+    gap: 6rem;
+}
+
+.managed-fit-layout h2 {
+    max-width: 700px;
+    margin-top: 1.2rem;
+    font-size: clamp(2.8rem, 4.5vw, 4.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.05em;
+}
+
+.managed-fit-list {
+    display: grid;
+}
+
+.managed-fit-list > div {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    gap: 1rem;
+    padding: 1.35rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.managed-fit-list > div:first-child {
+    border-top: 0;
+}
+
+.managed-fit-list span {
+    width: 8px;
+    height: 8px;
+    margin-top: 0.55rem;
+    border-radius: 50%;
+    background: var(--blue-mid);
+}
+
+.managed-fit-list p {
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.managed-process-section {
+    padding: 7rem 0;
+    color: #ffffff;
+    background: var(--blue-dark);
+}
+
+.managed-process-heading {
+    max-width: 840px;
+    margin-bottom: 4rem;
+}
+
+.managed-process-heading h2 {
+    margin-top: 1.3rem;
+    color: #ffffff;
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 1;
+    letter-spacing: -0.05em;
+}
+
+.managed-process-heading h2 em {
+    color: var(--blue-light);
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.managed-process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.managed-process-grid article {
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.managed-process-grid article > span {
+    color: var(--blue-light);
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+.managed-process-grid h3 {
+    margin: 2rem 0 0.8rem;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+.managed-process-grid p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PRICING
+   ========================================================= */
+
+.managed-pricing-section {
+    background: #ffffff;
+}
+
+.managed-pricing-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(340px, 0.8fr);
+    gap: 6rem;
+    align-items: center;
+}
+
+.managed-pricing-layout h2 {
+    max-width: 680px;
+    margin-top: 1.2rem;
+    font-size: clamp(2.8rem, 4.5vw, 4.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.05em;
+}
+
+.managed-pricing-card {
+    padding: 2.4rem;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    background: var(--paper-cool);
+}
+
+.managed-pricing-label {
+    color: var(--blue-mid);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+}
+
+.managed-pricing-card > strong {
+    display: block;
+    margin: 1.3rem 0 1rem;
+    font-size: 1.7rem;
+    line-height: 1.25;
+}
+
+.managed-pricing-card p {
+    margin-bottom: 1.6rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SCOPE
+   ========================================================= */
+
+.managed-scope-section {
+    padding: 7rem 0;
+    color: #ffffff;
+    background: linear-gradient(145deg, #27374d, #35485f);
+}
+
+.managed-scope-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.85fr);
+    gap: 6rem;
+}
+
+.managed-scope-layout h2 {
+    max-width: 760px;
+    margin-top: 1.3rem;
+    color: #ffffff;
+    font-size: clamp(2.8rem, 4.5vw, 4.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.05em;
+}
+
+.managed-scope-layout h2 em {
+    color: var(--blue-light);
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.managed-scope-layout > div:last-child {
+    padding-top: 2rem;
+}
+
+.managed-scope-layout > div:last-child p {
+    margin-bottom: 1.4rem;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .managed-page-hero-layout,
+    .managed-included-layout,
+    .managed-fit-layout,
+    .managed-pricing-layout,
+    .managed-scope-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .managed-page-copy h1 {
+        font-size: clamp(3rem, 10vw, 4.8rem);
+    }
+
+    .managed-included-copy {
+        position: static;
+    }
+
+    .managed-value-grid,
+    .managed-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .managed-page-hero,
+    .managed-included-section,
+    .managed-process-section,
+    .managed-scope-section {
+        padding: 4.5rem 0;
+    }
+
+    .managed-page-copy h1 {
+        font-size: clamp(2.8rem, 13vw, 4rem);
+    }
+
+    .managed-page-panel,
+    .managed-pricing-card {
+        padding: 1.6rem;
+        border-radius: 20px;
+    }
+
+    .managed-business-stat strong {
+        font-size: 3.2rem;
+    }
+
+    .managed-included-copy h2,
+    .managed-fit-layout h2,
+    .managed-process-heading h2,
+    .managed-pricing-layout h2,
+    .managed-scope-layout h2 {
+        font-size: clamp(2.4rem, 11vw, 3.4rem);
+    }
+
+    .managed-value-card,
+    .managed-process-grid article {
+        padding: 1.6rem;
+    }
+
+}

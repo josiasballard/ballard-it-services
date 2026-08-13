@@ -1,0 +1,444 @@
+/* =========================================================
+   SERVICE AREA PAGE
+   ========================================================= */
+
+.service-area-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 7rem 0 6rem;
+    background:
+        radial-gradient(
+            circle at 80% 38%,
+            rgba(157, 178, 191, 0.24),
+            transparent 32%
+        ),
+        linear-gradient(135deg, #ffffff, #f5f8fa);
+}
+
+.service-area-hero-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(390px, 0.85fr);
+    gap: 5rem;
+    align-items: center;
+}
+
+.service-area-copy h1 {
+    max-width: 800px;
+    margin: 1.4rem 0 1.6rem;
+    font-size: clamp(3.6rem, 5.8vw, 5.8rem);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+}
+
+.service-area-copy h1 em {
+    display: block;
+    color: var(--blue-mid);
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.service-area-copy > p:not(.section-kicker) {
+    max-width: 690px;
+    color: var(--text-muted);
+    font-size: 1.08rem;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   HERO MAP
+   ========================================================= */
+
+.service-area-map-card {
+    position: relative;
+    min-height: 500px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    background:
+        linear-gradient(145deg, #edf2f5, #fafcfd);
+    box-shadow: 0 28px 70px rgba(39, 55, 77, 0.1);
+}
+
+.service-area-map-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(82, 109, 130, 0.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(82, 109, 130, 0.055) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+.service-area-map-shape {
+    position: absolute;
+    width: 190px;
+    height: 310px;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%) rotate(8deg);
+    border: 3px solid rgba(82, 109, 130, 0.45);
+    border-radius: 46% 42% 52% 40% / 26% 35% 48% 62%;
+    background: rgba(221, 230, 237, 0.68);
+}
+
+.service-area-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 45%;
+    top: 54%;
+    border-radius: 50%;
+    background: var(--blue-dark);
+}
+
+.service-area-ring {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: calc(45% - 11px);
+    top: calc(54% - 11px);
+    border: 1px solid rgba(39, 55, 77, 0.35);
+    border-radius: 50%;
+    animation: pulse-ring 2.4s ease-out infinite;
+}
+
+.service-area-map-label {
+    position: absolute;
+    left: 28px;
+    top: 28px;
+    display: grid;
+}
+
+.service-area-map-label span {
+    margin-bottom: 4px;
+    color: var(--blue-mid);
+    font-size: 0.66rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+}
+
+.service-area-map-label strong {
+    font-size: 1.3rem;
+    letter-spacing: -0.03em;
+}
+
+.service-area-map-meta {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    width: min(270px, calc(100% - 48px));
+    padding: 1.1rem;
+    border: 1px solid rgba(82, 109, 130, 0.14);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 16px 35px rgba(39, 55, 77, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+.service-area-map-meta > div {
+    display: grid;
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.service-area-map-meta > div:first-child {
+    padding-top: 0;
+    border-top: 0;
+}
+
+.service-area-map-meta strong {
+    font-size: 0.8rem;
+}
+
+.service-area-map-meta span {
+    margin-top: 2px;
+    color: var(--text-muted);
+    font-size: 0.69rem;
+}
+
+
+/* =========================================================
+   COVERAGE CARDS
+   ========================================================= */
+
+.service-area-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.service-area-card {
+    min-height: 250px;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    background: #ffffff;
+}
+
+.service-area-card > span {
+    color: var(--blue-mid);
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+.service-area-card h3 {
+    margin: 2.2rem 0 0.8rem;
+    font-size: 1.45rem;
+}
+
+.service-area-card p {
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   REMOTE FIRST
+   ========================================================= */
+
+.service-area-remote-section {
+    padding: 7rem 0;
+    color: #ffffff;
+    background: var(--blue-dark);
+}
+
+.service-area-remote-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: 6rem;
+}
+
+.service-area-remote-layout h2 {
+    max-width: 700px;
+    margin: 1.3rem 0 1.4rem;
+    color: #ffffff;
+    font-size: clamp(3rem, 4.8vw, 4.8rem);
+    line-height: 1;
+    letter-spacing: -0.05em;
+}
+
+.service-area-remote-layout h2 em {
+    display: block;
+    color: var(--blue-light);
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.service-area-remote-layout > div:first-child > p:not(.section-kicker) {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.75;
+}
+
+.service-area-remote-list {
+    display: grid;
+}
+
+.service-area-remote-list > div {
+    display: grid;
+    grid-template-columns: 46px 1fr;
+    gap: 1.2rem;
+    padding: 1.7rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.service-area-remote-list > div:first-child {
+    border-top: 0;
+}
+
+.service-area-remote-list > div > span {
+    color: var(--blue-light);
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+.service-area-remote-list strong {
+    display: block;
+    margin-bottom: 0.45rem;
+    color: #ffffff;
+    font-size: 1.05rem;
+}
+
+.service-area-remote-list p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FIT
+   ========================================================= */
+
+.service-area-fit-section {
+    background: var(--paper-warm);
+}
+
+.service-area-fit-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1fr);
+    gap: 6rem;
+}
+
+.service-area-fit-layout h2 {
+    max-width: 720px;
+    margin-top: 1.2rem;
+    font-size: clamp(2.8rem, 4.5vw, 4.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.05em;
+}
+
+.service-area-fit-list {
+    display: grid;
+}
+
+.service-area-fit-list > div {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    gap: 1rem;
+    padding: 1.4rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.service-area-fit-list > div:first-child {
+    border-top: 0;
+}
+
+.service-area-fit-list span {
+    width: 8px;
+    height: 8px;
+    margin-top: 0.55rem;
+    border-radius: 50%;
+    background: var(--blue-mid);
+}
+
+.service-area-fit-list p {
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   EXPECTATIONS
+   ========================================================= */
+
+.service-area-expectations-section {
+    padding: 7rem 0;
+    color: #ffffff;
+    background: linear-gradient(145deg, #27374d, #35485f);
+}
+
+.service-area-expectations-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.85fr);
+    gap: 6rem;
+}
+
+.service-area-expectations-layout h2 {
+    max-width: 760px;
+    margin-top: 1.3rem;
+    color: #ffffff;
+    font-size: clamp(2.8rem, 4.5vw, 4.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.05em;
+}
+
+.service-area-expectations-layout h2 em {
+    color: var(--blue-light);
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.service-area-expectations-layout > div:last-child {
+    padding-top: 2rem;
+}
+
+.service-area-expectations-layout > div:last-child p {
+    margin-bottom: 1.4rem;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+    .service-area-hero-layout,
+    .service-area-remote-layout,
+    .service-area-fit-layout,
+    .service-area-expectations-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .service-area-map-card {
+        width: min(100%, 650px);
+        margin: 0 auto;
+    }
+
+    .service-area-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .service-area-hero {
+        padding: 4.5rem 0 4rem;
+    }
+
+    .service-area-copy h1 {
+        font-size: clamp(2.9rem, 12vw, 4.2rem);
+    }
+
+    .service-area-map-card {
+        min-height: 410px;
+        border-radius: 22px;
+    }
+
+    .service-area-map-shape {
+        width: 155px;
+        height: 255px;
+    }
+
+    .service-area-remote-section,
+    .service-area-expectations-section {
+        padding: 4.5rem 0;
+    }
+
+    .service-area-remote-layout h2,
+    .service-area-fit-layout h2,
+    .service-area-expectations-layout h2 {
+        font-size: clamp(2.5rem, 11vw, 3.5rem);
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .service-area-map-card {
+        min-height: 370px;
+    }
+
+    .service-area-map-label {
+        left: 20px;
+        top: 20px;
+    }
+
+    .service-area-map-meta {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        width: auto;
+    }
+
+    .service-area-card {
+        min-height: 0;
+        padding: 1.6rem;
+        border-radius: 18px;
+    }
+
+}
