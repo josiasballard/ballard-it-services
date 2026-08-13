@@ -8,8 +8,8 @@
    HOMEPAGE MODULES
    ========================================================= */
 
-@import url("./pages/home/hero.css");
-@import url("./pages/home/services.css");
-@import url("./pages/home/why.css");
-@import url("./pages/home/managed.css");
-@import url("./pages/home/local.css");
+@import url("./home-hero.css");
+@import url("./home-services.css");
+@import url("./home-why.css");
+@import url("./home-managed.css");
+@import url("./home-local.css");
