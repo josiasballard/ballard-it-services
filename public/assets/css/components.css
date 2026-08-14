@@ -92,20 +92,39 @@
     gap: 30px;
 }
 
+
+/* =========================================================
+   BRAND / LOGO
+   ========================================================= */
+
 .brand {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
     color: var(--ink);
     text-decoration: none;
     flex-shrink: 0;
 }
+
+
+/* Real horizontal Ballard IT Services logo */
+
+.brand-logo {
+    display: block;
+    width: 148px;
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* Temporary / legacy constructed brand mark
+   Retained for footer until footer logo is replaced */
 
 .brand-mark {
     width: 38px;
     height: 38px;
     display: grid;
     place-items: center;
+    flex-shrink: 0;
     border-radius: 11px;
     background: var(--ink-soft);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
@@ -120,6 +139,7 @@
 
 .brand-text {
     display: grid;
+    margin-left: 12px;
     line-height: 1.02;
 }
 
@@ -136,6 +156,11 @@
     font-weight: 750;
     letter-spacing: 0.16em;
 }
+
+
+/* =========================================================
+   DESKTOP NAVIGATION
+   ========================================================= */
 
 .desktop-nav {
     display: flex;
@@ -169,11 +194,17 @@
     font-weight: 700;
 }
 
+
+/* =========================================================
+   MOBILE NAVIGATION TOGGLE
+   ========================================================= */
+
 .menu-toggle {
     display: none;
     width: 42px;
     height: 42px;
     margin-left: auto;
+    padding: 0;
     border: 1px solid var(--line);
     border-radius: 10px;
     background: #ffffff;
@@ -188,6 +219,11 @@
     border-radius: 999px;
     background: var(--ink-soft);
 }
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+   ========================================================= */
 
 .mobile-nav {
     display: none;
@@ -240,11 +276,9 @@
     padding: 54px;
     border-radius: var(--radius-xl);
     background:
-        linear-gradient(
-            145deg,
+        linear-gradient(145deg,
             rgba(221, 230, 237, 0.72),
-            #f5f8fa
-        );
+            #f5f8fa);
 }
 
 .cta-copy h2 {
@@ -255,7 +289,7 @@
     letter-spacing: -0.052em;
 }
 
-.cta-copy > p:not(.section-kicker) {
+.cta-copy>p:not(.section-kicker) {
     max-width: 600px;
     color: #667481;
     font-size: 0.96rem;
@@ -306,7 +340,7 @@
     margin-bottom: 18px;
 }
 
-.footer-brand > p {
+.footer-brand>p {
     max-width: 320px;
     color: #788591;
     font-size: 0.84rem;
@@ -319,7 +353,7 @@
     gap: 8px;
 }
 
-.footer-column > strong {
+.footer-column>strong {
     margin-bottom: 5px;
     color: var(--ink-soft);
     font-size: 0.78rem;
@@ -356,6 +390,7 @@
    ========================================================= */
 
 @keyframes pulse-ring {
+
     0% {
         transform: scale(0.7);
         opacity: 0.8;
@@ -370,6 +405,7 @@
         transform: scale(1.7);
         opacity: 0;
     }
+
 }
 
 
@@ -411,9 +447,17 @@
         min-height: 68px;
     }
 
+    .brand-logo {
+        width: 132px;
+    }
+
     .brand-mark {
         width: 34px;
         height: 34px;
+    }
+
+    .brand-text {
+        margin-left: 10px;
     }
 
     .brand-text strong {
@@ -466,6 +510,10 @@
 
     .nav-shell {
         width: min(100% - 28px, 1180px);
+    }
+
+    .brand-logo {
+        width: 122px;
     }
 
 }
