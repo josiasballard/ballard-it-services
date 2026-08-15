@@ -92,7 +92,9 @@
 }
 
 
-/* ---------- Form ---------- */
+/* =========================================================
+   FORM
+   ========================================================= */
 
 .contact-request-panel {
     padding: 2.4rem;
@@ -193,15 +195,56 @@
     cursor: pointer;
 }
 
-.contact-form-note {
-    color: #89949d;
-    font-size: 0.72rem;
+
+/* =========================================================
+   FORM STATUS / SUBMISSION FEEDBACK
+   ========================================================= */
+
+.contact-form-status {
+    min-height: 24px;
+    margin-top: 0.1rem;
+    color: #74818c;
+    font-size: 0.86rem;
+    font-weight: 650;
     line-height: 1.5;
     text-align: center;
 }
 
+.contact-form-status:empty {
+    min-height: 0;
+    margin-top: 0;
+}
 
-/* ---------- What Happens Next ---------- */
+.contact-form-status.is-success {
+    padding: 0.8rem 0.95rem;
+    border: 1px solid rgba(85, 114, 95, 0.18);
+    border-radius: 10px;
+    background: rgba(85, 114, 95, 0.07);
+    color: #55725f;
+}
+
+.contact-form-status.is-error {
+    padding: 0.8rem 0.95rem;
+    border: 1px solid rgba(161, 79, 79, 0.18);
+    border-radius: 10px;
+    background: rgba(161, 79, 79, 0.07);
+    color: #a14f4f;
+}
+
+.contact-submit:disabled {
+    cursor: wait;
+    opacity: 0.72;
+    transform: none;
+}
+
+.contact-submit:disabled:hover {
+    transform: none;
+}
+
+
+/* =========================================================
+   WHAT HAPPENS NEXT
+   ========================================================= */
 
 .contact-next-section {
     background: #ffffff;
@@ -238,7 +281,9 @@
 }
 
 
-/* ---------- Support Types ---------- */
+/* =========================================================
+   SUPPORT TYPES
+   ========================================================= */
 
 .contact-support-section {
     padding: 7rem 0;
@@ -317,7 +362,9 @@
 }
 
 
-/* ---------- Local ---------- */
+/* =========================================================
+   LOCAL
+   ========================================================= */
 
 .contact-local-section {
     background: var(--paper-warm);
@@ -374,6 +421,7 @@
 
 }
 
+
 @media (max-width: 700px) {
 
     .contact-page-hero {
@@ -403,6 +451,7 @@
     }
 
 }
+
 
 @media (max-width: 500px) {
 
