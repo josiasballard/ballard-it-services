@@ -132,11 +132,15 @@
     line-height: 1.2;
 }
 
+/*
+   Decorative word is anchored directly to .about-visual-card.
+   HTML must place .about-visual-word INSIDE .about-visual-card.
+*/
 .about-visual-word {
     position: absolute;
-    z-index: 3;
-    right: 18px;
-    bottom: 10px;
+    z-index: 4;
+    right: -38px;
+    bottom: -18px;
     color: rgba(157, 178, 191, 0.92);
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(3.9rem, 5.6vw, 5.3rem);
@@ -145,7 +149,6 @@
     letter-spacing: -0.055em;
     white-space: nowrap;
     pointer-events: none;
-    transform: translate(22%, 38%);
 }
 
 
@@ -552,15 +555,13 @@
     }
 
     .about-visual-word {
-        right: 18px;
-        bottom: 10px;
-        transform: translate(18%, 34%);
+        right: -30px;
+        bottom: -16px;
     }
 
     .credential-grid {
         max-width: 700px;
     }
-
 }
 
 
@@ -597,10 +598,9 @@
     }
 
     .about-visual-word {
-        right: 12px;
-        bottom: 8px;
+        right: -18px;
+        bottom: -14px;
         font-size: 3.7rem;
-        transform: translate(12%, 32%);
     }
 
     .about-approach-section,
@@ -633,7 +633,6 @@
         grid-template-columns: 38px 1fr;
         gap: 0.9rem;
     }
-
 }
 
 
@@ -673,10 +672,9 @@
     }
 
     .about-visual-word {
-        right: 8px;
-        bottom: 6px;
+        right: -8px;
+        bottom: -12px;
         font-size: 3.15rem;
-        transform: translate(8%, 28%);
     }
 
     .about-approach-grid article,
@@ -688,5 +686,4 @@
     .experience-row {
         grid-template-columns: 32px 1fr;
     }
-
 }
