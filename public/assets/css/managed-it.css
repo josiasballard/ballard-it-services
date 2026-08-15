@@ -434,6 +434,15 @@
 
 
 /* =========================================================
+   FINAL CTA SPACING
+   ========================================================= */
+
+.managed-scope-section + .cta-section {
+    padding-top: 6rem;
+}
+
+
+/* =========================================================
    RESPONSIVE
    ========================================================= */
 
@@ -463,6 +472,7 @@
 
 }
 
+
 @media (max-width: 600px) {
 
     .managed-page-hero,
@@ -470,6 +480,10 @@
     .managed-process-section,
     .managed-scope-section {
         padding: 4.5rem 0;
+    }
+
+    .managed-scope-section + .cta-section {
+        padding-top: 4rem;
     }
 
     .managed-page-copy h1 {
