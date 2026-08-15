@@ -135,8 +135,8 @@
 .about-visual-word {
     position: absolute;
     z-index: 3;
-    right: -24px;
-    bottom: -33px;
+    right: 18px;
+    bottom: 10px;
     color: rgba(157, 178, 191, 0.92);
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(3.9rem, 5.6vw, 5.3rem);
@@ -145,6 +145,7 @@
     letter-spacing: -0.055em;
     white-space: nowrap;
     pointer-events: none;
+    transform: translate(22%, 38%);
 }
 
 
@@ -551,8 +552,9 @@
     }
 
     .about-visual-word {
-        right: 26px;
-        bottom: -30px;
+        right: 18px;
+        bottom: 10px;
+        transform: translate(18%, 34%);
     }
 
     .credential-grid {
@@ -595,9 +597,10 @@
     }
 
     .about-visual-word {
-        right: 10px;
-        bottom: -27px;
+        right: 12px;
+        bottom: 8px;
         font-size: 3.7rem;
+        transform: translate(12%, 32%);
     }
 
     .about-approach-section,
@@ -671,8 +674,9 @@
 
     .about-visual-word {
         right: 8px;
-        bottom: -24px;
+        bottom: 6px;
         font-size: 3.15rem;
+        transform: translate(8%, 28%);
     }
 
     .about-approach-grid article,
