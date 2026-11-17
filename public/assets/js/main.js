@@ -57,6 +57,12 @@ if (supportForm) {
         try {
             const formData = new FormData(supportForm);
 
+            const turnstileToken = formData.get("cf-turnstile-response");
+
+            if (!turnstileToken) {
+                throw new Error("Please complete the security verification.");
+            }
+
             const response = await fetch(supportForm.action, {
                 method: "POST",
                 body: formData
@@ -85,6 +91,10 @@ if (supportForm) {
             // Clear the form only after a successful submission.
             supportForm.reset();
 
+            if (window.turnstile) {
+                window.turnstile.reset();
+            }
+
         } catch (error) {
             console.error("Support form submission error:", error);
 
@@ -92,6 +102,10 @@ if (supportForm) {
                 "Something went wrong. Please call (605) 646-8291 or email support@ballardit.com.";
 
             statusMessage.classList.add("is-error");
+
+            if (window.turnstile) {
+                window.turnstile.reset();
+            }
 
         } finally {
             // Restore the button whether the request succeeded or failed.
